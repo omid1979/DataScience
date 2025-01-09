@@ -50,4 +50,25 @@ SELECT table_name FROM user_tables;
 
 SELECT table_name FROM all_tables WHERE owner = 'SYS';
 
+===========================================================
+1 Connect to Oracle as SYSDBA: 
+sqlplus sys as sysdba
 
+
+2 Create a new user: 
+CREATE USER new_user IDENTIFIED BY password;
+ 
+
+
+3 Grant necessary privileges:
+GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE PROCEDURE, CREATE SEQUENCE, CREATE TRIGGER TO new_user;
+GRANT ALL PRIVILEGES TO new_user;  -- Optional for full access
+ 
+
+
+4 Connect as the new user: 
+sqlplus new_user/password
+
+
+5 Insert data into a table: 
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
