@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  oracle:
+    container_name: oracle
+    image: gvenzl/oracle-xe:latest
+    ports:
+      - "1521:1521"
+    environment:
+      #- ORACLE_RANDOM_PASSWORD=true
+      - ORACLE_PASSWORD=passw0rd
+    volumes:
+      - /STORAGE/oracle-xe/data:/u01/app/oracle/oradata
+
