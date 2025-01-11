@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     postgres:
-        image: postgres:15
+        image: docker.arvancloud.ir/postgres:15
         environment:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=password
@@ -12,7 +12,7 @@ services:
         networks:
             - postgres-db-network
     pgadmin:
-        image: dpage/pgadmin4
+        image: docker.arvancloud.ir/dpage/pgadmin4
         environment:
             PGADMIN_DEFAULT_EMAIL: 'teste@teste.com'
             PGADMIN_DEFAULT_PASSWORD: 'teste'
