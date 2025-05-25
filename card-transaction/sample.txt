@@ -1,0 +1,37 @@
+[
+  {
+    "card_number": "6274123456789012",
+    "transaction_date": "1404/07/01 14:23:45",
+    "amount": 1500000,
+    "merchant_id": "M123456",
+    "transaction_type": "POS"
+  },
+  {
+    "card_number": "5892109876543210",
+    "transaction_date": "1404/07/15 09:10:30",
+    "amount": 320000,
+    "merchant_id": "M789012",
+    "transaction_type": "Online"
+  },
+  {
+    "card_number": "5022291234567890",
+    "transaction_date": "1404/08/10 18:45:12",
+    "amount": 7500000,
+    "merchant_id": "M345678",
+    "transaction_type": "POS"
+  },
+  {
+    "card_number": "6274123456789012",
+    "transaction_date": "1404/09/05 12:15:00",
+    "amount": 450000,
+    "merchant_id": "M901234",
+    "transaction_type": "Online"
+  },
+  {
+    "card_number": "6104332145678901",
+    "transaction_date": "1404/09/25 20:30:22",
+    "amount": 120000,
+    "merchant_id": "M567890",
+    "transaction_type": "ATM"
+  }
+]
