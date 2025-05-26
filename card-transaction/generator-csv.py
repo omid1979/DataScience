@@ -12,7 +12,7 @@ cards = [random.choice(prefixes) + str(random.randint(100000000000, 999999999999
 
 # تولید ۱,۰۰۰,۰۰۰ تراکنش
 transactions = []
-for _ in range(100000000):
+for _ in range(1000000):
     card = random.choice(cards)
     # تولید تاریخ و زمان تصادفی
     delta = end_date - start_date
